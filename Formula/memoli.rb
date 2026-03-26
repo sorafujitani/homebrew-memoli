@@ -1,21 +1,21 @@
 class Memoli < Formula
   desc "CLI markdown memo manager"
   homepage "https://github.com/sorafujitani/memoli"
-  version "1.1.0"
+  version "1.1.1"
   license "MIT"
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/sorafujitani/memoli/releases/download/v#{version}/memoli-darwin-arm64"
-    sha256 "530b5902e89ad7868962afa0e0f1a788a4e694dc4e7cddbbcb8c1ed68164817d"
+    sha256 "08dc5feedc317fafe0578f4dc0de11fd87259579c46a97beb5d6cfaf13de0e92"
   elsif OS.mac? && Hardware::CPU.intel?
     url "https://github.com/sorafujitani/memoli/releases/download/v#{version}/memoli-darwin-x64"
-    sha256 "45993c031e1aecc08db4a358d4e0bd6ddcf0c40e9044c50247b8e0359d7587da"
+    sha256 "21e96aa97d507b57a6e37db35e7422c5565158f6b5f523f0def75e3c9f07dfe1"
   elsif OS.linux? && Hardware::CPU.arm?
     url "https://github.com/sorafujitani/memoli/releases/download/v#{version}/memoli-linux-arm64"
-    sha256 "64e9695855a55658950ba6ec18d6cd27c2b3144531ff8ebe9dd833bf9b2fdfc9"
+    sha256 "da87b21d7f90effade6392b810810c51230397de0e9b4062516a25edb598b5f2"
   elsif OS.linux? && Hardware::CPU.intel?
     url "https://github.com/sorafujitani/memoli/releases/download/v#{version}/memoli-linux-x64"
-    sha256 "4800e58b32a69f96e9da35d151a8b116f63928178de92026e8e18542598a2eea"
+    sha256 "3c67b1a49a9d364228d14bfe5fc63e548482103ba391375b427e3333c53114f1"
   end
 
   def install
